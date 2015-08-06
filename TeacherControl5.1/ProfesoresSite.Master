@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProfesoresSite.Master.cs" Inherits="TeacherControl5._1.Profesores" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="/Resource/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Resource/Scripts/jquery-ui.js"></script>
+    <link href="/Resource/css/jquery-ui.css" rel="stylesheet" />
+     <script>
+        $(function () {
+            $(".datepicker").datepicker();
+        });
+    </script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Teacher's Control | Profesor</title>
+    <link href="/Resource/css/estilo_index_prof.css" rel="stylesheet" />
+    <link href="/Resource/css/fonts.css" rel="stylesheet" />
+    <script src="/Resource/js/jquery-latest.js"></script>
+    <script src="/Resource/js/queryMenu.js"></script>
+    <script src="/Resource/js/menu_profesores.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>  <form id="form1" runat="server">
+    <header>
+    	<div id="logo"><img src="/Resource/img/logo.jpg" /></div>
+         <div>
+         <asp:LoginName ID="LoginName1" runat="server" />
+             <asp:Button ID="LogoutButton" runat="server" Text="Logout" CausesValidation="false" OnClick="LogoutButton_Click" />
+             </div>
+    	<div id="menu">
+            	<div class="menu_bar">
+					<a href="#" class="bt-menu"><span class="icon-menu"></span>Profesor</a>
+				</div>
+                <div id="bar">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><span class="icon-user"></span>Perfil</a></li>
+                         <li class="submenu">
+                            <a href="#"><span class="icon-books"></span>Registros</a>
+                            <ul class="children">
+                                <li><a href="#">Asignaturas</a></li>
+                                <li><a href="#">Semestres</a></li>
+                                <li><a href="#">Grupos</a></li>
+                                <li><a href="#">Tipos de Evaluaciones</a></li>
+                                <li><a href="#">Evaluaciones en Grupos</a></li>
+                                <li><a href="#">Inscribir Estudiantes</a></li>
+                                <li><a href="#">Calificar Estudiantes</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><span class="icon-search"></span>Consultas</a>
+                            <ul class="children">
+                                <li><a href="#">Asignaturas</a></li>
+                                <li><a href="#">Semestres</a></li>
+                                <li><a href="#">Grupos</a></li>
+                                <li><a href="#">Tipos de Evaluaciones</a></li>
+                                <li><a href="#">Evaluaciones en Grupos</a></li>
+                                <li><a href="#">Inscribir Estudiantes</a></li>
+                                <li><a href="#">Calificar Estudiantes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+         </div>
+    </header>
+    <div id="contenido">
+    	<div id="menu_desktop">
+               	<div id="contenedor-principal">
+                    <div class="contenedor-arcodeon">
+                    	<a href="#" class="titulo-acordeon"><span class="icon-user"></span>Perfil</a>
+                    </div>
+                    <div class="contenedor-arcodeon">
+                    	<a href="#" class="titulo-acordeon"><span class="icon-books"></span>Registros</a>
+                        <div class="contenido-acordeon">
+                        	<ul class="menu_ul">
+                            	<li><a href="/ControlPanel/Profesor/Registros/AsignaturasWeb.aspx">Asignaturas</a></li>
+                                <li><a href="/ControlPanel/Profesor/Registros/SemestresWeb.aspx">Semestres</a></li>
+                                <li><a href="/ControlPanel/Profesor/Registros/GruposWeb.aspx">Grupos</a></li>
+                                <li><a href="/ControlPanel/Profesor/Registros/TiposEvaluacionesWeb.aspx">Tipos de Evaluaciones</a></li>
+                                <li><a href="#">Evaluaciones en Grupos</a></li>
+                                <li><a href="/ControlPanel/Profesor/Registros/InscripcionesWeb.aspx">Inscribir Estudiantes</a></li>
+                                <li><a href="#">Calificar Estudiantes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contenedor-arcodeon">
+                    	<a href="#" class="titulo-acordeon"><span class="icon-search"></span>Consultas</a>
+                        <div class="contenido-acordeon">
+                        	<ul class="menu_ul">
+                            	<li><a href="#">Asignaturas</a></li>
+                                <li><a href="#">Semestres</a></li>
+                                <li><a href="#">Grupos</a></li>
+                                <li><a href="#">Tipos de Evaluaciones</a></li>
+                                <li><a href="#">Evaluaciones en Grupos</a></li>
+                                <li><a href="#">Inscribir Estudiantes</a></li>
+                                <li><a href="#">Calificar Estudiantes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+         	</div>
+  
+  
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+          </div>
+     <footer>
+    </footer>
+</body>
+</html>

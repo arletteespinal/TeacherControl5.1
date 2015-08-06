@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeacherControl5.1", "TeacherControl5.1\TeacherControl5.1.csproj", "{0349E88C-1FDE-4DF6-B136-CF07CF0F6CD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{23944000-C626-443C-9F53-793E1434E503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{53B7C57A-858F-438C-A64C-266DF103A8C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0349E88C-1FDE-4DF6-B136-CF07CF0F6CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0349E88C-1FDE-4DF6-B136-CF07CF0F6CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0349E88C-1FDE-4DF6-B136-CF07CF0F6CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0349E88C-1FDE-4DF6-B136-CF07CF0F6CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23944000-C626-443C-9F53-793E1434E503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23944000-C626-443C-9F53-793E1434E503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23944000-C626-443C-9F53-793E1434E503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23944000-C626-443C-9F53-793E1434E503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B7C57A-858F-438C-A64C-266DF103A8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B7C57A-858F-438C-A64C-266DF103A8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B7C57A-858F-438C-A64C-266DF103A8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B7C57A-858F-438C-A64C-266DF103A8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

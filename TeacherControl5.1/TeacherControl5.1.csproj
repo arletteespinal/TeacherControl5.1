@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0349E88C-1FDE-4DF6-B136-CF07CF0F6CD3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeacherControl5._1</RootNamespace>
+    <AssemblyName>TeacherControl5.1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlPanel\Administrador\Consultas\AsignaturasWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Consultas\CalificacionesWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Consultas\GruposWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Consultas\InscripcionesWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Consultas\SemestresWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Consultas\TiposEvaluacionesWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Consultas\UsuariosWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\InicioWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\AsignaturasWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\CalificacionesWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\EvaluacionesGruposWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\GruposWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\InscripcionesWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\ProfesoresWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\SemestresWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\TiposEvaluacionesWeb.aspx" />
+    <Content Include="ControlPanel\Administrador\Registros\UsuariosWeb.aspx" />
+    <Content Include="ControlPanel\Estudiante\Consultas\Calificaciones.aspx" />
+    <Content Include="ControlPanel\Estudiante\Consultas\GruposInscritos.aspx" />
+    <Content Include="ControlPanel\Estudiante\Consultas\MiProgreso.aspx" />
+    <Content Include="ControlPanel\Estudiante\InicioWeb.aspx" />
+    <Content Include="ControlPanel\Estudiante\Registros\InscribirGrupo.aspx" />
+    <Content Include="ControlPanel\Estudiante\Registros\MiPerfil.aspx" />
+    <Content Include="ControlPanel\Profesor\InicioWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Registros\AsignaturasWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Registros\GruposWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Registros\InscripcionesWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Registros\SemestresWeb.aspx" />
+    <Content Include="ControlPanel\Profesor\Registros\TiposEvaluacionesWeb.aspx" />
+    <Content Include="Registrarse.aspx" />
+    <Content Include="Resource\css\estilo.css" />
+    <Content Include="Resource\css\estilo_index_estudiantes.css" />
+    <Content Include="Resource\css\estilo_index_prof.css" />
+    <Content Include="Resource\css\estilo_index_profesores.css" />
+    <Content Include="Resource\css\fonts.css" />
+    <Content Include="Resource\css\jquery-ui.css" />
+    <Content Include="Resource\fonts\icomoon.svg" />
+    <Content Include="Resource\img\logo.jpg" />
+    <Content Include="Resource\js\jquery-latest.js" />
+    <Content Include="Resource\js\main.js" />
+    <Content Include="Resource\js\menuJs.js" />
+    <Content Include="Resource\js\menu_profesores.js" />
+    <Content Include="Resource\js\queryMenu.js" />
+    <Content Include="default.aspx" />
+    <Content Include="Resource\Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Resource\Scripts\jquery-ui.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministradoresSite.Master.cs">
+      <DependentUpon>AdministradoresSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministradoresSite.Master.designer.cs">
+      <DependentUpon>AdministradoresSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\AsignaturasWeb.aspx.cs">
+      <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\AsignaturasWeb.aspx.designer.cs">
+      <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\CalificacionesWeb.aspx.cs">
+      <DependentUpon>CalificacionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\CalificacionesWeb.aspx.designer.cs">
+      <DependentUpon>CalificacionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\GruposWeb.aspx.cs">
+      <DependentUpon>GruposWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\GruposWeb.aspx.designer.cs">
+      <DependentUpon>GruposWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\InscripcionesWeb.aspx.cs">
+      <DependentUpon>InscripcionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\InscripcionesWeb.aspx.designer.cs">
+      <DependentUpon>InscripcionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\SemestresWeb.aspx.cs">
+      <DependentUpon>SemestresWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\SemestresWeb.aspx.designer.cs">
+      <DependentUpon>SemestresWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\TiposEvaluacionesWeb.aspx.cs">
+      <DependentUpon>TiposEvaluacionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\TiposEvaluacionesWeb.aspx.designer.cs">
+      <DependentUpon>TiposEvaluacionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\UsuariosWeb.aspx.cs">
+      <DependentUpon>UsuariosWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Consultas\UsuariosWeb.aspx.designer.cs">
+      <DependentUpon>UsuariosWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\InicioWeb.aspx.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\InicioWeb.aspx.designer.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\AsignaturasWeb.aspx.cs">
+      <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\AsignaturasWeb.aspx.designer.cs">
+      <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\CalificacionesWeb.aspx.cs">
+      <DependentUpon>CalificacionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\CalificacionesWeb.aspx.designer.cs">
+      <DependentUpon>CalificacionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\EvaluacionesGruposWeb.aspx.cs">
+      <DependentUpon>EvaluacionesGruposWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\EvaluacionesGruposWeb.aspx.designer.cs">
+      <DependentUpon>EvaluacionesGruposWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\GruposWeb.aspx.cs">
+      <DependentUpon>GruposWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\GruposWeb.aspx.designer.cs">
+      <DependentUpon>GruposWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\InscripcionesWeb.aspx.cs">
+      <DependentUpon>InscripcionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\InscripcionesWeb.aspx.designer.cs">
+      <DependentUpon>InscripcionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\ProfesoresWeb.aspx.cs">
+      <DependentUpon>ProfesoresWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\ProfesoresWeb.aspx.designer.cs">
+      <DependentUpon>ProfesoresWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\SemestresWeb.aspx.cs">
+      <DependentUpon>SemestresWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\SemestresWeb.aspx.designer.cs">
+      <DependentUpon>SemestresWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\TiposEvaluacionesWeb.aspx.cs">
+      <DependentUpon>TiposEvaluacionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\TiposEvaluacionesWeb.aspx.designer.cs">
+      <DependentUpon>TiposEvaluacionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\UsuariosWeb.aspx.cs">
+      <DependentUpon>UsuariosWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Administrador\Registros\UsuariosWeb.aspx.designer.cs">
+      <DependentUpon>UsuariosWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Consultas\Calificaciones.aspx.cs">
+      <DependentUpon>Calificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Consultas\Calificaciones.aspx.designer.cs">
+      <DependentUpon>Calificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Consultas\GruposInscritos.aspx.cs">
+      <DependentUpon>GruposInscritos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Consultas\GruposInscritos.aspx.designer.cs">
+      <DependentUpon>GruposInscritos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Consultas\MiProgreso.aspx.cs">
+      <DependentUpon>MiProgreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Consultas\MiProgreso.aspx.designer.cs">
+      <DependentUpon>MiProgreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\InicioWeb.aspx.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\InicioWeb.aspx.designer.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\InscribirGrupo.aspx.cs">
+      <DependentUpon>InscribirGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\InscribirGrupo.aspx.designer.cs">
+      <DependentUpon>InscribirGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\MiPerfil.aspx.cs">
+      <DependentUpon>MiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Estudiante\Registros\MiPerfil.aspx.designer.cs">
+      <DependentUpon>MiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\InicioWeb.aspx.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\InicioWeb.aspx.designer.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\AsignaturasWeb.aspx.cs">
+      <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\AsignaturasWeb.aspx.designer.cs">
+      <DependentUpon>AsignaturasWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\GruposWeb.aspx.cs">
+      <DependentUpon>GruposWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\GruposWeb.aspx.designer.cs">
+      <DependentUpon>GruposWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\InscripcionesWeb.aspx.cs">
+      <DependentUpon>InscripcionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\InscripcionesWeb.aspx.designer.cs">
+      <DependentUpon>InscripcionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\SemestresWeb.aspx.cs">
+      <DependentUpon>SemestresWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\SemestresWeb.aspx.designer.cs">
+      <DependentUpon>SemestresWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\TiposEvaluacionesWeb.aspx.cs">
+      <DependentUpon>TiposEvaluacionesWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel\Profesor\Registros\TiposEvaluacionesWeb.aspx.designer.cs">
+      <DependentUpon>TiposEvaluacionesWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstudiantesSite.Master.cs">
+      <DependentUpon>EstudiantesSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstudiantesSite.Master.designer.cs">
+      <DependentUpon>EstudiantesSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfesoresSite.Master.cs">
+      <DependentUpon>ProfesoresSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfesoresSite.Master.designer.cs">
+      <DependentUpon>ProfesoresSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EstudiantesSite.Master" />
+    <Content Include="ProfesoresSite.Master" />
+    <Content Include="AdministradoresSite.Master" />
+    <Content Include="Resource\fonts\icomoon.eot" />
+    <Content Include="Resource\fonts\icomoon.ttf" />
+    <Content Include="Resource\fonts\icomoon.woff" />
+    <None Include="Properties\PublishProfiles\Arlette.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{23944000-c626-443c-9f53-793e1434e503}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ControlPanel\Profesor\Consultas\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49727</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49727/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

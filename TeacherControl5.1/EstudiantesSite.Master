@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EstudiantesSite.Master.cs" Inherits="TeacherControl5._1.Estudiantes" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta charset="utf-8"/>
+   <title>Teacher's Control | Estudiantes</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+   <link href="Resource/css/estilo_index_estudiantes.css" rel="stylesheet" />
+   <link href="Resource/css/fonts.css" rel="stylesheet" />
+   <script src="/Resource/js/jquery-latest.js"></script>
+   <script src="/Resource/js/queryMenu.js"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+      <form id="form1" runat="server">
+     <header>
+        	<div id="logo"><img src="/Resource/img/logo.jpg"/></div>
+         <div>
+         <asp:LoginName ID="LoginName1" runat="server" />
+          <asp:Button ID="LogoutButton" runat="server" Text="Logout" CausesValidation="false" OnClick="LogoutButton_Click"  />
+             </div>
+        	<div id="menu">
+            	<div class="menu_bar">
+					<a href="#" class="bt-menu"><span class="icon-menu"></span>Teacher's Control</a>
+				</div>
+                <nav>
+                    <ul>
+                        <li><a href="/ControlPanel/Estudiante/Registros/MiPerfil.aspx"><span class="icon-user"></span>Perfil</a></li>
+                         <li class="submenu">
+                            <a href="#"><span class="icon-users"></span>Grupos</a>
+                            <ul class="children">
+                                <li><a href="/ControlPanel/Estudiante/Registros/InscribirGrupo.aspx">Inscribir Grupo </a></li>
+                                <li><a href="/ControlPanel/Estudiante/Consultas/GruposInscritos.aspx">Grupos Inscritos</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><span class="icon-book"></span>Asignaciones</a>
+                            <ul class="children">
+                                <li><a href="#">Ver Asignaciones </a></li>
+                                <li><a href="#">Enviar Asignaciones </a></li>
+                                <li><a href="#">Calificar Compañeros</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="/ControlPanel/Estudiante/Consultas/Calificaciones.aspx"><span class="icon-clipboard"></span>Calificaciones</a>
+                        </li>
+                        <li><a href="/ControlPanel/Estudiante/Consultas/MiProgreso.aspx"><span class="icon-stats-dots"></span>Mi Progreso</a></li>
+                    </ul>
+                </nav>
+         </div>
+        	
+        </header>
+        <div id="contenido">
+              
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   
+                	
+    	</div>
+        <footer>
+        </footer>
+   </form>
+</body>
+</html>

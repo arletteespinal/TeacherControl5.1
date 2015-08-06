@@ -1,0 +1,253 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	font-family:"Century Gothic";
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+/*========ESTRUCTURA=========*/
+body{
+	background-color:#fff;	
+}
+/*header{
+
+	background-color:#0097cd;
+	width:100%;
+	height:125px;	
+}*/
+header{
+	width:100%;
+	background-color:#FFF;
+	/*background-color:#50b7c8;*/
+	/*background-color:#1b84a4;*/
+	height:200px;
+	
+}
+#contenido{
+	background-color:#FFF;
+	width:100%;
+	height:400px;	
+}
+footer{
+	background-color:#0099cc;
+	width:100%;
+	height:125px;
+	clear:both;
+	position:relative;
+}
+/*=============================*/
+/*=============MENU=============*/
+.menu_bar{
+	display:none;	
+}
+#menu{
+	float:left;
+	width:100%;
+	background-color:#0099cc;
+	
+}
+
+header nav{
+	float:left;
+	background:#0099cc;
+	/*background:#1b84a4;*/
+	z-index:1000;
+	max-width:1000px;
+	width:95%;
+	/*margin-top:98px;*/
+}
+header nav ul{
+	list-style:none;
+}
+header nav ul li{
+	display:inline-block; 
+	position:relative;
+}
+header nav ul li:hover{
+	background:#03b3e2;
+	/*background:#46a0af;*/
+}
+header nav ul li a:hover{
+	color:#FFF;
+}
+header nav ul li a{
+	color:#ffffff;
+	display:block;
+	text-decoration:none;
+	padding:10px 30px 10px 30px;/*arriba, derecha, abajo, izquierda*/
+}
+header nav ul li a span{
+	margin-right:10px;
+}
+header nav ul li:hover .children{
+	display:block;
+}
+header nav ul li .children{/*Ocultar los submenus*/
+	display:none;
+	background:#0080ab;
+	/*background:#027ebc;*/
+	position:absolute;/*porque el menu padre tiene que estar relative y los submenus absolute*/
+	width:150%;
+	z-index:1000;
+}
+header nav ul li .children li{
+	display:block;
+	overflow:hidden;
+	border-bottom:1px solid rgba(255,255,255,.5);
+}
+header nav ul li .children li a{
+	display:block;
+}
+/*==============================*/
+/*=======ELEMENTOS DE LA PAGINA==========*/
+.titulo{
+	float:left;
+	margin-left:100px;
+	margin-top:50px;
+	font-size:2.5em;
+	color:#0097cd;
+}
+
+#logo img{
+	float:left;
+	width:200px;
+	margin-left:50px;
+	margin-top:10px;
+	height:140px;	
+}
+#form{
+	float:left;
+	width:400px;
+	height:300px;
+	margin-top:50px;
+	margin-left:50px;
+	background-color:#0097cd;	
+}
+#entradaA{
+	float:left;
+	padding:8px;	
+	margin-left:60px;
+	margin-top:45px;
+}
+#entradaB{
+	float:left;
+	padding:8px;	
+	margin-left:60px;
+	margin-top:25px;
+}
+#check{
+	color:#FFF;
+	float:left;
+	margin-top:20px;
+	margin-left:80px;
+}
+.boton{
+	float:left;
+	padding:8px;
+	margin-top:20px;
+	background-color:#FFF;	
+	margin-left:94px;
+	color:#0097cd;
+	font-weight:bold;
+}
+.boton:hover{
+	cursor:pointer;	
+}
+#reg{
+	font-size:15px;
+	float:left;
+	color:#FFF;	
+	margin-top:15px;
+	margin-left:300px;
+	
+}
+/*=======================================*/
+/*===============RESPONSIVE DESIGN CODE=================*/
+@media screen and (max-width:862px){
+	#logo img{
+		display:none;
+	}
+	header{
+		height:80px;
+	}
+	body{
+		padding-top:80px;
+	}
+	.menu_bar{
+		display:block;
+		width:100%;
+		position:fixed;
+		top:0;
+		background:#333; 
+	}
+	.menu_bar .bt-menu{
+		display:block;
+		padding:20px;
+		color:#FFF;
+		overflow:hidden;
+		font-size:25px;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	.menu_bar span{
+		float:right;
+		font-size:40px;
+	}
+	header nav{
+		width:80%;
+		height:calc (100% - 80px);
+		position:fixed;
+		right:100%;
+		margin:0;
+		overflow:scroll;
+	}
+	header nav ul li{
+		display:block;
+		border-bottom:1px solid rgba(255,255,255,.5)
+	}
+	header nav ul li a{
+		display:block;
+	}
+	header nav ul li:hover .children{
+		display:none;
+	}
+	header nav ul li .children{
+		width:100%;
+		position:relative;
+
+	}
+	
+	footer{
+		background:#333;
+	}
+}
+@media screen and (max-width:980px) and (min-width:863px){
+	header nav{
+		width:100%;
+	}
+	header nav ul{
+		margin-left:0%;
+	}
+}
+@media screen and (max-width:1280px) and (min-width:981px){
+	header nav{
+		margin-left:0%;
+		width:100%;
+	}
+	header nav ul{
+		margin-left:5%;
+	}
+}
+@media screen and (max-width:1920px) and (min-width:1281px){
+	header nav{
+		margin-left:0%;
+		width:100%;
+	}
+	header nav ul{
+		margin-left:10%;
+	}
+}
+/*======================================================*/
+

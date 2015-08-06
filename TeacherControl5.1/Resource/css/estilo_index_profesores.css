@@ -1,0 +1,185 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	font-family:"Century Gothic";
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+/*========ESTRUCTURA=========*/
+body{
+	background-color:#fff;	
+}
+/*header{
+
+	background-color:#0097cd;
+	width:100%;
+	height:125px;	
+}*/
+header{
+	width:100%;
+	background-color:#FFF;
+	/*background-color:#50b7c8;*/
+	/*background-color:#1b84a4;*/
+	height:190px;
+	
+}
+#contenido{
+	background-color:#FFF;
+	width:100%;
+	height:400px;	
+}
+footer{
+	background-color:#0099cc;
+	width:100%;
+	height:125px;
+	clear:both;
+	position:relative;
+}
+/*=============================*/
+/*=============MENU=============*/
+#contenedor-principal{
+	margin:10px auto;
+    width:95%;
+    min-width:320px;
+    max-width:960px;
+}
+#contenedor-principal h1{
+	font-size: 40px;
+	color:#0099cc;
+}
+.contenedor-acordeon{
+	width: 100%;
+    margin: 0 0 20px;
+    clear:both;
+	background:#CCC;
+}
+.titulo-acordeon{
+	position: relative;
+    display: block;
+    padding: 20px;
+    font-weight: 300;
+    background: #0099cc;
+    color: #fff;
+    text-decoration: none;
+	border-bottom:1px solid rgba(255,255,255,.5)
+}
+.titulo-acordeon .open{
+	background: #16a085;
+    color: #fff;
+}
+.titulo-acordeon:hover{
+	background: #03b3e2;
+}
+.titulo-acordeon span .toogle-icon:before{
+	content:"+";
+}
+.titulo-acordeon .open span .toogle-icon:before{
+	content:"-";	
+}
+.titulo-acordeon span .toogle-icon{
+	position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 38px;
+    font-weight:bold;
+}
+.contenido-acordeon{
+	display: none;
+    padding: 0px;
+    overflow: auto;
+}
+.contenido-acordeon{
+	margin:0;
+}
+ul li a{
+	text-decoration:none;
+	color:#FFF;
+	padding:5px;
+	display:block;
+}
+.titulo-acordeon span{
+	margin-right:10px;
+}
+ul li{
+	list-style:none;
+	padding:5px;
+	border-bottom:1px solid rgba(255,255,255,.5);
+	background:#0080ab;
+}
+ul li:hover{
+	background-color:#03b3e2;
+}
+/*==============================*/
+/*=======ELEMENTOS DE LA PAGINA==========*/
+#menu_bar{
+	float:left;
+	width:100%;
+	height:40px;
+	background-color:#0099cc;
+	
+}
+.titulo{
+	float:left;
+	margin-left:100px;
+	margin-top:50px;
+	font-size:2.5em;
+	color:#0097cd;
+}
+
+#logo img{
+	float:left;
+	width:200px;
+	margin-left:50px;
+	margin-top:10px;
+	height:140px;	
+}
+#menu{
+	float:left;
+	margin-left:15px;
+	margin-bottom:25px;
+	width:350px;
+	
+}
+#seccion_modificable{
+	float:left;
+	margin-top:25px;
+	margin-left:10px;
+	width:900px;
+	height:125px;
+	border:2px solid #0099cc;
+}
+/*=======================================*/
+/*===============RESPONSIVE DESIGN CODE=================*/
+@media screen and (max-width:800px){
+	#menu{
+		width:100%;
+		float:left;
+		margin-left:0px;
+		margin-bottom:0px;
+}
+.contenedor-acordeon{
+	width: 100%;
+    margin: 0 0 0px;
+}
+#seccion_modificable{
+	float:left;
+	margin-top:25px;
+	margin-left:0px;
+	overflow:auto;
+	width:100%;
+	
+}
+	
+@media screen and (max-width:980px) and (min-width:801px){
+	
+}
+@media screen and (max-width:1280px) and (min-width:981px){
+	
+}
+@media screen and (max-width:1920px) and (min-width:1281px){
+
+}
+/*======================================================*/
+
